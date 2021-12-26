@@ -12,7 +12,7 @@ gulp.task("html", () => {
 
 gulp.task("sass", (cb) => {
   gulp
-    .src("src/*.scss")
+    .src("src/**/*.scss")
     .pipe(sass())
     .pipe(
       gulp.dest((f) => {
