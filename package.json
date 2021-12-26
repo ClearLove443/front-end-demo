@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "tsc": "tsc",
+    "gulp": "gulp"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-typescript": "*",
+    "sass": "^1.45.1",
+    "typescript": "^4.5.4"
+  }
+}
