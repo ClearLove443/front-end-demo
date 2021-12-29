@@ -16,6 +16,10 @@ const afterFetchData = (): void => {
   after();
 };
 
+const SSLFetchData = (): void => {
+  ssl();
+};
+
 const fetchData = (): void => {
   for (let i = 1; i <= pokemons; i++) {
     getPokemon(i);
@@ -27,6 +31,10 @@ const before = async (): Promise<void> => {
 };
 const after = async (): Promise<void> => {
   const data = await fetch(`http://110.40.137.191/api/test`);
+};
+
+const ssl = async (): Promise<void> => {
+  const data = await fetch(`https://onlyyounotothers.top/api/test`);
 };
 
 const getPokemon = async (id: number): Promise<void> => {
